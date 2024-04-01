@@ -1,0 +1,79 @@
+/* The <form> takes up 40% of the width of the <main> element.
+Since, margin-left and margin-right is auto it is centered from left and right.*/
+form {
+    border: 2px solid grey;
+    padding: 25px;
+    border-radius: 25px;
+    width: 45%;
+    margin: 60px auto;
+}
+
+/* Stying the heading and paragraph of the form */
+form > p , form > h2 {
+    text-align: center;
+}
+
+form > h2{
+    font-size: 42px;
+    color: cadetblue;
+}
+
+form > p {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Styling the labels and input fields of the form.
+Both are set to display block.*/        
+form label {
+    display:  block;
+    font-size: 20px;
+}
+
+form input {
+    display: block;
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+    margin: 5px 0px 15px 0px;
+}
+
+/* Styling some specific input elements */
+#country{
+    margin: 5px 0px 15px 0px;
+}
+
+/* Gender radio-input fields */
+/* The radio buttons have a width of 20px and set to display inline */
+#gender p, #gender label, #gender input {
+    display: inline;
+    width: 20px;
+    font-size: 20px;
+}
+
+/* The checkbox is set to display inline-block and width of 20px so, it appears along with the text
+following it */
+#terms-of-service {
+    display: inline-block;
+    width: 20px;
+}
+
+
+/* Styling the submit button - It is same as that of the sign-in page */
+input[type="submit"] {
+    margin-top: 25px;
+    border-radius: 30px;
+    border: none;
+    width: 100%;
+    width: 90%;
+    padding: 10px;
+    margin: 20px auto;
+    border: 1px solid grey;
+}
+
+/* While hovering over the submit button , it's style changes */
+input[type="submit"]:hover {
+    color: white;
+    background-color: cadetblue;
+}

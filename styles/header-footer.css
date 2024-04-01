@@ -1,0 +1,108 @@
+/* This file contains only the styles for the header , footer of all of the webpages of our website.
+This file has been imported in every webpage of the website.*/
+
+/* CSS RESET: Setting these default attributes for all elements.*/
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+
+/* Header Part */
+/* Header has a specific font, The header has white text with a black background,The header 
+is a flex-box with three children.*/
+    header {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+        background-color: rgb(56, 56, 56);
+        display: flex;
+        flex-flow: row wrap;   
+        justify-content: space-around;
+        align-items: center;        
+    }
+/* The three children of the header are flex-boxes as well. Here, I am selecting all the direct 
+children of the header */
+    header > * {
+        display: flex;
+        align-items: center;
+        margin: 5px 0px;
+    }
+
+    header h1 {
+        margin: 0px 5px;
+    }
+/* Styling the Anchors inside the header, removing underlines and using white color, 
+setting borders to be rounded.*/
+    header a {
+        text-decoration: none;
+        color: white;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 0px 5px;
+    }
+/* Hovering on the anchors of the header turns them grey */
+    header a:hover {
+        color: rgb(195, 193, 193);
+    }
+
+
+
+/*Footer Part*/
+/* The footer has the same font as used in the header, with slight different background color.
+It has two child containers : a div and a paragraph. */
+    footer {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 16px;
+        background-color:rgb(87, 80, 80);
+        color: white;
+        text-align: center;
+    }
+
+/* This is the first child container of footer which is a flexbox containing 4 children.*/
+    #footer-links{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        text-align: center;
+    }
+/* Styling the anchors of the container */
+    #footer-links a{
+        display: block;
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+    #footer-links a:link {
+        color: white;
+    }
+    #footer-links a:visited {
+        color: whitesmoke;
+    }
+    #footer-links a:hover {
+        color: rgb(195, 193, 193);
+    }
+    #footer-links a:active {
+        color: rgb(177, 175, 175);
+    }
+/* Styling the headings h6 - inside the container */
+    #footer-links h6 {
+        font-size: 1.5em;
+        color: cadetblue;
+        margin-bottom: 10px;
+    }
+/* Images of social media links in the fourth child of the of the footer-links container*/
+    #footer-social {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+/* Styling the images of the fourth child container of the div container*/
+    #footer-social img {
+        width: 50px;
+        border: 4px solid grey;
+        border-radius: 50%;
+    }
+/* The second child of the footer which has center aligned text containing the copyright information */
+    footer p {
+        margin-top: 150px;
+    }

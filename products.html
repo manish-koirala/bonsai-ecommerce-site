@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Manish Koirala">
+    <meta name="description" content="Buy fresh bonsaiplants. Amazing bonsai deals for the upcoming festivals. Get your bonsai plants , delivered straight to your home now.">
+    <meta name="keywords" content="bonsai, plants, fresh, ecommerce, buy, delivery, deals">
+    <title>Buy Bonsai Products | Amazing Sales Going On | Don't miss out</title>
+    <!-- CSS Link for header-footer styles -->
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <!-- CSS Link for for styles specific to this page. -->
+    <link rel="stylesheet" href="styles/products.css">
+    <!-- Internal CSS -->
+    <style>
+        /* Default anchors behaviour */
+        main a {text-decoration: none;}
+
+        /* Cart Image Style for all over the page */
+        .cart-img > img { width: 30px; }
+        
+        /* A 'add-to-cart' container with this class has following properties */
+        .added-to-cart {font-weight: bolder; color: cadetblue;}
+
+        /* A div with this class is hidden. */
+        .hidden {height: 0px; width: 0px; display: none; overflow: hidden;}
+
+        /* Cancelled Price for Products After Discount*/
+        .product-content s {color: grey;}
+        /* Product names and Product prices: */
+        .product-name {font-size: 15px; margin: 8px 0px;}
+        .product-price {font-size: 16px; color: cadetblue;}
+
+        /* Add to cart paragraph text */
+        .add-to-cart > p { margin: 5px 5px;}     
+
+        /* Left slider and Right Slider Boxes onhover*/
+        .left-slider-container:hover, .right-slider-container:hover{ box-shadow: 0px 0px 4px 1px grey; }
+
+    </style>
+</head>
+
+
+<body>
+    <!-- Header Part -->
+    <header>
+        <!-- Logo -->
+        <div id="logo">
+            <img src="images/logos/logo.png" alt="naedoko-website-logo" width="50px">
+            <h1>Naedoko </h1>
+        </div>
+        <!-- Navigation bar -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html" style="background-color: cadetblue; color: white;">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="research.html">Research</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+        <!-- Login and Register Options -->
+        <div>
+            <a href="sign-in.html">Login</a>
+            <a href="sign-up.html" >Get Started</a>
+        </div>
+    </header>
+
+
+    <!-- Main Part -->
+    <main>
+
+        <!-- Cart Container -->
+        <div id="top">
+            <div id="search-box"><input type="text" placeholder="Search"></div>
+            <div id="search-btn"><img src="images/logos/search_btn.png" alt="search-button" width="25px;"></div>
+            <div id="cart-container">
+                <div class="cart-img"><img src="images/logos/cart.png" alt="cart-logo"></div>
+                <div id="cart-num">0</div>
+            </div>
+        </div>
+
+        <!-- First Container for Image Slides and left-right slider buttons -->
+        <div id="container1">
+            <!-- Left Slider Button -->
+            <div class="left-slider-container">
+                <div class="left-slider"></div>
+            </div>
+
+            <!-- Actual Slides Content -->
+            <div id="slides">
+                <div id="slides-content">
+                    <h1 style="font-size: 32px; margin-bottom: 1em;">Get The Best Quality Bonsai Deals.</h1>
+                    <p style="font-size: 18px; margin: 16px;">Check out the amazing new year sales. <br> Get 50% off while buying a product <br>
+                    worth more than 100Rs. .</p>
+                    <a id="buy-now-btn" href="#container4">Buy Now</a>
+                </div>
+                <div id="slides-bottom"  style="display: flex; justify-content: center; align-self: flex-end;">
+                    <div id="c01" class="circles"></div>
+                    <div id="c02" class="circles"></div>
+                    <div id="c03" class="circles"></div>
+                </div>
+            </div>
+
+            <!-- Right Slider Button -->
+            <div class="right-slider-container">
+                <div class="right-slider"></div>
+            </div>
+        </div>
+
+        <!-- Different Categories for Bonsai Plants -->
+        <div id="categories" style="display:flex; justify-content: center; flex-wrap: wrap;">
+            <div class="categories-products">
+                <h2 class="categories-headings">Aesthetic</h1>
+                <div class="categories-images" style="background-image: url(images/sale_products/aesthetic/1.jpg);"></div>
+                <p class="categories-anchors" style="margin: 15px 0px;"><a href="#container3-b1">Buy Now</a></p>
+            </div>
+            <div class="categories-products">
+                <h2 class="categories-headings">Gardening</h1>
+                <div class="categories-images" style="background-image: url(images/sale_products/gardening/1.jpg);"></div>
+                <p class="categories-anchors" style="margin: 15px 0px;"><a href="#container3-b2">Buy Now</a></p>
+            </div>
+            <div class="categories-products">
+                <h2 class="categories-headings">Fruits</h1>
+                <div class="categories-images" style="background-image: url(images/sale_products/fruits/1.jpg);"></div>
+                <p class="categories-anchors" style="margin: 15px 0px;"><a href="#container3-b3">Buy Now</a></p>
+            </div>
+            <div class="categories-products">
+                <h2 class="categories-headings">Favourites</h1>
+                <div class="categories-images" style="background-image: url(images/sale_products/aesthetic/4.jpg);"></div>
+                <p class="categories-anchors" style="margin: 15px 0px;"><a href="#container3-b4">Buy Now</a></p>
+            </div>
+        </div>
+
+
+        <!-- Second Container for Limited Sales -->
+        <div id="container2">
+            <!-- Heading -->
+            <h2 id="on-sale-now-label">On Sale Now</h2>
+                
+            <!-- Products on Limited Sales -->
+            <div id="limited-sales">
+
+                <!-- Limited Sales : Row 1 -->
+                <div id="limited-sales-b1">
+                    <!-- Buy1-Get1-Free Box -->
+                    <div id="buy1-get1">
+                        <h2>Buy 1 Get 1 Free</h2>
+                        <div id="buy1-get1-products" class="products-container">
+                            <!-- First Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/aesthetic/5.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Cedar</h5>
+                                    <p class="product-price">x2 For Rs. 49.99</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"></div>
+                                </div>
+                            </div>
+                            <!-- Second Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/fruits/10.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Orange Fruits</h5>
+                                    <p class="product-price">x2 For Rs. 99.99</p>  
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png" ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row1 : Monthly Deals Box -->
+                    <div id="monthly-deals">
+                        <h2>Monthly Deals(50% Off)</h2>
+                        <div id="monthly-deals-products" class="products-container">
+                            <!-- First Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/fruits/3.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Crabapple</h5>
+                                    <p class="product-price">Rs. 50</p>
+                                    <p><s>Rs. 50</s> Rs. 25</p>   
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Second Product -->
+                            <div class="product" id="md-product2">
+                                <div class="product-image" style="background-image: url(images/sale_products/fruits/6.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Cherry</h5>
+                                    <p class="product-price">Rs. 70</p>
+                                    <p><s>Rs. 50</s> Rs. 35</p>   
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Third Product -->
+                            <div class="product" id="md-product3">
+                                <div class="product-image" style="background-image: url(images/sale_products/aesthetic/9.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Dwarf Boxwood</h5>
+                                    <p class="product-price">Rs. 90</p>
+                                    <p><s>Rs. 90</s> Rs. 45</p>   
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Limited Sales : Row 2 -->
+                <div id="limited-sales-b2">
+
+                    <!-- Row2 : Festive Offer Box -->
+                    <div id="festive-offer">
+                        <h2>Festive OFFERS(75% OFF)</h2>
+                        <div id="festive-offer-products" class="products-container">
+                            <!-- First Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/gardening/3.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Fukien tea</h5>
+                                    <p class="product-price">Rs. 100</p>
+                                    <p><s>Rs. 100</s> Rs. 25.00</p>   
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Second Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/gardening/6.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Snow rose</h5>
+                                    <p class="product-price">Rs. 150</p>
+                                    <p><s>Rs. 150</s> Rs. 37.50</p>   
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Third Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/aesthetic/10.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Chinese elm</h5>
+                                    <p class="product-price">Rs. 90</p>
+                                    <p><s>Rs. 90</s> Rs. 22.50</p>   
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row2: link to sign-in-->
+                    <div id="sign-in-info" style="display: flex; flex-direction: column; align-items: center;">
+                        <div style="background-color: aliceblue; padding: 40px;">
+                            <h2 style="color: cadetblue;">Sign in for the best experience.</h2>
+                            <a href="sign-in.html" style="font-size: 24px; display: block; margin: 16px; color: grey;">Sign In</a>
+                        </div>
+                        <div style="background-image:url(images/pictures/bonsai_2.jpg); background-position: center; color: white; font-size: 32px; padding: 40px; margin-top: 20px;"><p>We operate over 22 districts of Nepal.</p></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Third Container for Products classified into different Categories -->
+        <div id="container3">
+
+            <!--Container 3 - Aesthetic category-->
+            <div id="container3-b1">
+            <!-- Aesthetic Category -->
+                <h1 class="products-heading">Category: Aesthetic</h1>
+                <div id="category-aesthetic">
+                    <!-- Left Slider -->
+                    <div class="left-slider-container">
+                        <div class="left-slider"></div>
+                    </div>
+
+                    <!-- Content -->
+                    <div>
+                        <!-- Row1 -->
+                        <div class="category-row1 category-aesthetic-row1">
+                            <!-- First Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/aesthetic/1.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Juniper</h5>
+                                    <p class="product-price">Rs. 100</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Second Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/aesthetic/2.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Pine</h5>
+                                    <p class="product-price">Rs. 110</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Third Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/aesthetic/3.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Japanese Maple</h5>
+                                    <p class="product-price">Rs. 120</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Fourth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/aesthetic/4.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Japanese Flowering <br> Cherry</h5>
+                                    <p class="product-price">Rs. 130</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Fifth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/aesthetic/5.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Cedar</h5>
+                                    <p class="product-price">x2 For Rs. 49.99</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Row2 -->
+                        <div class="category-row2 category-aesthetic-row2 hidden">
+                            <!-- Sixth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/aesthetic/6.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Ginseng Ficus</h5>
+                                    <p class="product-price">Rs. 150</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Seventh Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/aesthetic/7.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Weeping Fig</h5>
+                                    <p class="product-price">Rs. 160</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Eighth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/aesthetic/8.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Dwarf Jade</h5>
+                                    <p class="product-price">Rs. 200</p> 
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Nineth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/aesthetic/9.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Dwarf Boxwood</h5>
+                                    <p class="product-price">Rs. 90</p>
+                                    <p><s>Rs. 90</s> Rs. 45</p>   
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Tenth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/aesthetic/10.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Chinese elm</h5>
+                                    <p class="product-price">Rs. 90</p>
+                                    <p><s>Rs. 90</s> Rs. 22.50</p>   
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Slider -->
+                    <div class="right-slider-container">
+                        <div class="right-slider"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container3 - Gardening category-->
+            <div id="container3-b2">
+            <!-- Gardening -->
+                <h1 class="products-heading">Category: Gardening</h1>
+                <!-- Container3 - Box 2 - Content: -->
+                <div id="category-gardening">
+
+                    <!-- Left Slider -->
+                    <div class="left-slider-container">
+                        <div class="left-slider"></div>
+                    </div>
+                    
+                     <!-- Content -->
+                    <div>
+                        <!-- Row1 -->
+                        <div class="category-row1 category-gardening-row1">
+                            <!-- First Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/gardening/1.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Ficus</h5>
+                                    <p class="product-price">Rs. 100</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Second Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/gardening/2.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Dwarf Jade</h5>
+                                    <p class="product-price">Rs. 110</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Third Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/gardening/3.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Fukien tea</h5>
+                                    <p class="product-price">Rs. 100</p>
+                                    <p><s>Rs. 100</s> Rs. 25.00</p>   
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Fourth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/gardening/4.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Azalea</h5>
+                                    <p class="product-price">Rs. 130</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Fifth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/gardening/5.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Bougainvillea</h5>
+                                    <p class="product-price">Rs. 140</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Row2 -->
+                        <div class="category-row2 category-gardening-row2 hidden">
+                            <!-- Sixth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/gardening/6.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Snow rose</h5>
+                                    <p class="product-price">Rs. 150</p>
+                                    <p><s>Rs. 150</s> Rs. 37.50</p>   
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Seventh Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/gardening/7.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Japanese maple</h5>
+                                    <p class="product-price">Rs. 160</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Eighth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/gardening/8.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Chinese elm</h5>
+                                    <p class="product-price">Rs. 90</p>
+                                    <p><s>Rs. 90</s> Rs. 22.50</p>   
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Nineth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/gardening/9.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Cherry</h5>
+                                    <p class="product-price">Rs. 180</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Tenth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/gardening/10.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Oak</h5>
+                                    <p class="product-price">Rs. 190</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Slider -->
+                    <div class="right-slider-container">
+                        <div class="right-slider"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container 3 - Fruits Category-->
+            <div id="container3-b3">
+            <!-- Fruits -->
+                <h1 class="products-heading">Category: Fruits</h1>
+                <!-- Container3 - Box3 - Content -->
+                <div id="category-fruits">
+                    <!-- Left Slider -->
+                    <div class="left-slider-container">
+                        <div class="left-slider"></div>
+                    </div>
+
+                     <!-- Content -->
+                     <div>
+                        <!-- Row1 -->
+                        <div class="category-row1 category-fruits-row1">
+                            <!-- First Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/fruits/1.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Meyer Lemon</h5>
+                                    <p class="product-price">Rs. 100</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Second Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/fruits/2.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Clamondin</h5>
+                                    <p class="product-price">Rs. 110</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Third Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/fruits/3.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Crabapple</h5>
+                                    <p class="product-price">Rs. 50</p>
+                                    <p><s>Rs. 50</s> Rs. 25</p>   
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Fourth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/fruits/4.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Pomegranate</h5>
+                                    <p class="product-price">Rs. 130</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Fifth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/fruits/5.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Lemons</h5>
+                                    <p class="product-price">Rs. 140</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Row2 -->
+                        <div class="category-row2 category-fruits-row2 hidden">
+                            <!-- Sixth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/fruits/6.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Cherry</h5>
+                                    <p class="product-price">Rs. 70</p>
+                                    <p><s>Rs. 50</s> Rs. 35</p>   
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Seventh Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/fruits/7.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Fig Tree</h5>
+                                    <p class="product-price">Rs. 160</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Eighth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/fruits/8.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Black Currant</h5>
+                                    <p class="product-price">Rs. 170</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Nineth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/fruits/9.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Callicarpa Japonica</h5>
+                                    <p class="product-price">Rs. 180</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Tenth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/fruits/10.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Orange Fuits</h5>
+                                    <p class="product-price">x2 For Rs. 99.99</p>  
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Slider -->
+                    <div class="right-slider-container">
+                        <div class="right-slider"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Container3 - Favourites Category-->
+            <div id="container3-b4">
+            <!-- Favourites -->
+                <h1 class="products-heading">Category: Favourites</h1>
+                <!-- Container3 - Box 4 - Content: -->
+                <div id="category-favourites">
+                    <!-- Left Slider -->
+                    <div class="left-slider-container">
+                        <div class="left-slider"></div>
+                    </div>
+
+                     <!-- Content -->
+                     <div>
+                        <!-- Row1 -->
+                        <div class="category-row1 category-favourites-row1">
+                            <!-- First Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/aesthetic/1.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Juniper</h5>
+                                    <p class="product-price">Rs. 100</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Second Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/aesthetic/4.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Japanese Flowering <br> Cherry</h5>
+                                    <p class="product-price">Rs. 130</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Third Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/aesthetic/7.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Weeping Fig</h5>
+                                    <p class="product-price">Rs. 160</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Fourth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/aesthetic/9.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Dwarf Boxwood</h5>
+                                    <p class="product-price">Rs. 90</p>
+                                    <p><s>Rs. 90</s> Rs. 45</p>   
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Fifth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/gardening/2.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Dwarf Jade</h5>
+                                    <p class="product-price">Rs. 110</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Row2 -->
+                        <div class="category-row2 category-favourites-row2 hidden">
+                            <!-- Sixth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/gardening/8.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Chinese elm</h5>
+                                    <p class="product-price">Rs. 90</p>
+                                    <p><s>Rs. 90</s> Rs. 22.50</p>   
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Seventh Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/gardening/5.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Bougainvillea</h5>
+                                    <p class="product-price">Rs. 140</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Eighth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/fruits/2.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Clamondin</h5>
+                                    <p class="product-price">Rs. 110</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Nineth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/fruits/8.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Black Currant</h5>
+                                    <p class="product-price">Rs. 170</p>
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                            <!-- Tenth Product -->
+                            <div class="product">
+                                <div class="product-image" style="background-image: url(images/sale_products/fruits/6.jpg);"></div>
+                                <div class="product-content">
+                                    <h4 class="product-name">Cherry</h5>
+                                    <p class="product-price">Rs. 70</p>
+                                    <p><s>Rs. 50</s> Rs. 35</p>   
+                                </div>
+                                <div class="add-to-cart">
+                                    <p>Add to Cart</p>
+                                    <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Slider -->
+                    <div class="right-slider-container">
+                        <div class="right-slider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Fourth Container for mass amount of products on sales. -->
+        <div id="container4">
+
+            <!-- Heading for the fourth container -->
+            <h1 class="products-heading">All Products</h1>
+
+            <!-- Content -->
+            <div class="mass-products">
+                <!-- First Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/aesthetic/1.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Juniper</h5>
+                        <p class="product-price">Rs. 100</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+                <!-- Second Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/aesthetic/2.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Pine</h5>
+                        <p class="product-price">Rs. 110</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+                <!-- Third Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/aesthetic/3.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Japanese Maple</h5>
+                        <p class="product-price">Rs. 120</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+                <!-- Fourth Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/aesthetic/4.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Japanese Flowering <br> Cherry</h5>
+                        <p class="product-price">Rs. 130</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+                <!-- Fifth Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/aesthetic/5.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Cedar</h5>
+                        <p class="product-price">x2 For Rs. 49.99</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+                <!-- Sixth Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/aesthetic/6.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Ginseng Ficus</h5>
+                        <p class="product-price">Rs. 150</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+
+                <!-- Seventh Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/aesthetic/7.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Weeping Fig</h5>
+                        <p class="product-price">Rs. 160</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+                <!-- Eighth Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/aesthetic/8.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Dwarf Jade</h5>
+                        <p class="product-price">Rs. 200</p> 
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+                <!-- Nineth Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/aesthetic/9.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Dwarf Boxwood</h5>
+                        <p class="product-price">Rs. 90</p>
+                        <p><s>Rs. 90</s> Rs. 45</p>   
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+                <!-- Tenth Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/aesthetic/10.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Chinese elm</h5>
+                        <p class="product-price">Rs. 90</p>
+                        <p><s>Rs. 90</s> Rs. 22.50</p>   
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+                    
+                <!-- Eleventh Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/gardening/1.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Ficus</h5>
+                        <p class="product-price">Rs. 100</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+                <!-- Twelveth Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/gardening/2.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Dwarf Jade</h5>
+                        <p class="product-price">Rs. 110</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+
+                <!-- Thirteenth Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/gardening/3.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Fukien tea</h5>
+                        <p class="product-price">Rs. 100</p>
+                        <p><s>Rs. 100</s> Rs. 25.00</p>   
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+                <!-- Fourteenth Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/gardening/4.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Azalea</h5>
+                        <p class="product-price">Rs. 130</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+                <!-- Fifteenth Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/gardening/5.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Bougainvillea</h5>
+                        <p class="product-price">Rs. 140</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+                <!-- Sixteenth Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/gardening/6.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Snow rose</h5>
+                        <p class="product-price">Rs. 150</p>
+                        <p><s>Rs. 150</s> Rs. 37.50</p>   
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+                <!-- Seventeenth Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/gardening/7.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Japanese maple</h5>
+                        <p class="product-price">Rs. 160</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+                <!-- Eighteenth Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/gardening/8.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Chinese elm</h5>
+                        <p class="product-price">Rs. 90</p>
+                        <p><s>Rs. 90</s> Rs. 22.50</p>   
+                    </div>
+                    <div class="add-to-cart">
+                        <p>Add to Cart</p>
+                        <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                    </div>
+                </div>
+
+
+                <!-- Hidden Content -->
+                <div class="mass-products hidden" id="more-content">
+
+                    <!-- Nineteenth Product -->
+                    <div class="product">
+                        <div class="product-image" style="background-image: url(images/sale_products/gardening/9.jpg);"></div>
+                        <div class="product-content">
+                            <h4 class="product-name">Cherry</h5>
+                            <p class="product-price">Rs. 180</p>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                            <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                        </div>
+                    </div>
+                    <!-- Twentith Product -->
+                    <div class="product">
+                        <div class="product-image" style="background-image: url(images/sale_products/gardening/10.jpg);"></div>
+                        <div class="product-content">
+                            <h4 class="product-name">Oak</h5>
+                            <p class="product-price">Rs. 190</p>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                            <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                        </div>
+                    </div>
+                    <!-- Twenty First Product -->
+                    <div class="product">
+                        <div class="product-image" style="background-image: url(images/sale_products/fruits/1.jpg);"></div>
+                        <div class="product-content">
+                            <h4 class="product-name">Meyer Lemon</h5>
+                            <p class="product-price">Rs. 100</p>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                            <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                        </div>
+                    </div>
+                    <!-- TwentySecond Product -->
+                    <div class="product">
+                        <div class="product-image" style="background-image: url(images/sale_products/fruits/2.jpg);"></div>
+                        <div class="product-content">
+                            <h4 class="product-name">Clamondin</h5>
+                            <p class="product-price">Rs. 110</p>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                            <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                        </div>
+                    </div>
+                    <!-- TwentyThird Product -->
+                    <div class="product">
+                        <div class="product-image" style="background-image: url(images/sale_products/fruits/3.jpg);"></div>
+                        <div class="product-content">
+                            <h4 class="product-name">Crabapple</h5>
+                            <p class="product-price">Rs. 50</p>
+                            <p><s>Rs. 50</s> Rs. 25</p>   
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                            <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                        </div>
+                    </div>
+                    <!-- TwentyFourth Product -->
+                    <div class="product">
+                        <div class="product-image" style="background-image: url(images/sale_products/fruits/4.jpg);"></div>
+                        <div class="product-content">
+                            <h4 class="product-name">Pomegranate</h5>
+                            <p class="product-price">Rs. 130</p>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                            <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                        </div>
+                    </div>
+                    <!-- TwentyFifth Product -->
+                    <div class="product">
+                        <div class="product-image" style="background-image: url(images/sale_products/fruits/5.jpg);"></div>
+                        <div class="product-content">
+                            <h4 class="product-name">Lemons</h5>
+                            <p class="product-price">Rs. 140</p>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                            <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                        </div>
+                    </div>
+                    <!-- TwentySixth Product -->
+                    <div class="product">
+                        <div class="product-image" style="background-image: url(images/sale_products/fruits/6.jpg);"></div>
+                        <div class="product-content">
+                            <h4 class="product-name">Cherry</h5>
+                            <p class="product-price">Rs. 70</p>
+                            <p><s>Rs. 50</s> Rs. 35</p>   
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                            <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                        </div>
+                    </div>
+                    <!-- TwentySeventh Product -->
+                    <div class="product">
+                        <div class="product-image" style="background-image: url(images/sale_products/fruits/7.jpg);"></div>
+                        <div class="product-content">
+                            <h4 class="product-name">Fig Tree</h5>
+                            <p class="product-price">Rs. 160</p>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                            <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                        </div>
+                    </div>
+                    <!-- TwentyEighth Product -->
+                    <div class="product">
+                        <div class="product-image" style="background-image: url(images/sale_products/fruits/8.jpg);"></div>
+                        <div class="product-content">
+                            <h4 class="product-name">Black Currant</h5>
+                            <p class="product-price">Rs. 170</p>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                            <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                        </div>
+                    </div>
+                    <!-- TwentyNineth Product -->
+                    <div class="product">
+                        <div class="product-image" style="background-image: url(images/sale_products/fruits/9.jpg);"></div>
+                        <div class="product-content">
+                            <h4 class="product-name">Callicarpa Japonica</h5>
+                            <p class="product-price">Rs. 180</p>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                            <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                        </div>
+                    </div>
+                    <!-- Thirteeth Product -->
+                    <div class="product">
+                        <div class="product-image" style="background-image: url(images/sale_products/fruits/10.jpg);"></div>
+                        <div class="product-content">
+                            <h4 class="product-name">Orange Fuits</h5>
+                            <p class="product-price">x2 For Rs. 99.99</p>  
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                            <div class="cart-img"><img src="images/logos/cart.png"  ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+            <!-- Load more button -->
+            <p id="load-more-button">Load More</p>
+        </div>
+        
+        
+        <!-- Scripts For The Page are imported here -->
+        <script src="scripts/products/products-addCart.js"></script>
+        <script src="scripts/products/products-categorySlider.js"></script>
+        <script src="scripts/products/products-loadmore.js"></script>
+        <script src="scripts/products/products-slides.js"></script>
+
+        
+        <!-- Container for the personalized-recommendations leading to sign-in and register -->
+        <div id="new-account">
+            <p>See personalized recommendations:</p>
+            <p><a href="sign-in.html">Sign In</a></p>
+            <p>New Customer ? <a href="sign-up.html">Start here</a></p>
+        </div>
+
+        <!-- Link that takes the user to the top of the page. -->
+        <p id="back-to-top"><a href="#logo">Back To Top</a></p>
+    </main>
+
+
+    <!-- Footer Part -->
+    <footer>
+        <!-- A flex container for four containers -->
+        <div id="footer-links">
+            <!-- First child container -->
+            <div class="footer-container">
+                <h6>About Us:</h6>
+                <a href="#">About Naedoko</a>
+                <a href="#">Careers</a>
+                <a href="#">News and Blog</a>
+                <a href="#">Suppliers</a>
+                <a href="#">Press Center</a>
+                <a href="#">Target Brands</a>
+            </div>
+            <!-- Second Child Container -->
+            <div class="footer-container">
+                <h6>Help:</h6>
+                <a href="#">Help and Support</a>
+                <a href="#">Feedback</a>
+                <a href="#">Security and Fraud</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Team Members</a>
+                <a href="#">Online Assistance</a>
+                <a href="#">Services</a>
+            </div>
+            <!-- Third Child Container -->
+            <div class="footer-container">
+                <h6>Store:</h6>
+                <a href="#">Find a store</a>
+                <a href="#">More In-Store Services</a>
+            </div>
+            <!-- Fourth Child Container -->
+            <div class="footer-container">
+                <h6>Remember To Follow Us:</h6>
+                <div id="footer-social">
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/logos/fb-logo.jpg" alt="facebook-logo"/></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="images/logos/ig-logo.jpg" alt="instagram-logo"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="images/logos/twitter-logo.jpg" alt="twitter-logo"></a>
+                    <a href="https://www.whatsapp.com" target="_blank"><img src="images/logos/whats-app.png" alt="whatsapp-logo"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright information -->
+        <p>&copy; CopyRight Naedoko 2022, ALL RIGHTS RESERVED!</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+/* General Settings for the main */
+/* Margin of top and bottom = 1px, left and right is 48px */
+    main {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin: 1px 48px;
+        font-size: 18px;
+        color: rgb(88,88,88);
+        border: 2px solid rgb(88, 88, 88);
+    }
+    /* General styles for the anchors inside of main */
+    main a {
+        text-decoration: none;
+        color: inherit;
+}
+
+/* Button General Styles : All buttons are styled the same */
+    button{
+        display: block;
+        width: 160px;
+        margin: 40px auto;
+        padding: 10px;
+        border: none;
+        border-radius: 30px;
+        text-decoration: none;
+        font-size: 18px;
+        background-color: whitesmoke;
+    }
+    /* Hover property for buttons */
+    button:hover {
+        color: whitesmoke;
+        background-color: cadetblue;
+    }
+
+/* Container1 Styling */
+    /* Setting Background image for container1, also border at bottom and fixing height to 80vh */
+    #container1 {
+        background-image: url('../images/pictures/bonsai_3.jpg');
+        background-position: center;
+        border-bottom: 5px solid rgb(88,88,88);
+        background-size: 100%;
+        padding: 64px 0px 0px;
+        height: 80vh;
+    }
+    /* Introduction section has 40% width of the parent container and is centered  using margin-left and right to auto*/
+    #intro{
+        color: whitesmoke;
+        width: 40%;
+        margin: 0px auto;
+    }
+
+/* Container 2 styling */
+    #container2{
+        border-bottom: 5px solid rgb(88,88,88);
+        padding: 32px 0px;
+        text-align: center;
+    }
+    /* Specific styling for the heading of container2. added border, width fixed to 400px and centered with margin-left and right to auto. */
+    #container2 > h1 {
+        border: 2px solid rgb(88,88,88);
+        width: 400px;
+        margin: 0px auto 16px;
+    }
+    /* The products container is a flex-box where flex-items are spaced evenly */
+    #products {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+/* Container3 styling */
+    #container3 {
+        border-bottom: 5px solid rgb(88,88,88);
+        display: flex;
+        height: 450px;
+        padding: 64px 64px 64px 0px;
+    }
+    #c3-section {
+        width: 50%;
+    }
+    #c3-img {
+        width: 50%;
+        overflow: auto;
+    }
+
+/* Container 4 styling */
+    #container4 {
+        margin: 32px 10px;
+        display: flex;
+        justify-content: space-evenly;
+        height: 450px;
+        text-align: center;
+    }
+    #c4-img {
+        width: 45%;
+        border: 2px solid rgb(88,88,88);
+        padding: 16px;
+        box-shadow: 4px 4px 0px grey;
+    }
+    #c4-section {
+        width: 45%;
+        border: 2px solid rgb(88,88,88);
+        box-shadow: 4px 4px 0px grey;
+        padding: 120px;
+    }
+
+/* Container5 Styling */
+    #container5 {
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 5px solid whitesmoke;
+        border-top: 5px solid rgb(88,88,88);
+        background-image: url('../images/sale_products/aesthetic/7.jpg');
+        background-size: 100%;
+        background-position: center;
+        height: 400px;
+    }
+    #c5-section {
+        width: 60%;
+        padding: 50px;
+    }
+
+/* Container6 Styling */
+    #container6 {
+        text-align: center;
+        background-color: rgb(88,88,88);
+        color: whitesmoke;
+        height: 300px;
+        padding: 100px;
+    }
+    #container6 p {
+        margin: 10px;
+    }

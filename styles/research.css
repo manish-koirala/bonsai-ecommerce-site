@@ -1,0 +1,52 @@
+/* General settings for the main section */
+main {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(88,88,88);
+    padding: 1px 0px;
+}
+/* All the images of the main section have fixed width and margin */
+main img {
+    width: 550px;
+    margin: 16px;
+}
+
+/* Styling the intro section */
+#intro {
+    background-color: rgb(88, 88, 88);
+    color: whitesmoke;
+}
+
+/* Styling all the individual site boxes of the sites container */
+.sites > div {
+    background-color: aliceblue;
+    margin: 16px;
+    padding: 16px;
+}
+
+/* Style for all the tables */
+table {
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/* Style for all the paragraphs. */
+p {
+    margin: 20px;
+}
+
+/* Style for all the heading lv. 2 */
+h2 {
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+/* Styling for all the table headers of the first row.... that contain images */
+th {
+    padding: 10px;
+}
+
+/* General styling for anchors. */
+a {
+    text-decoration: none;
+    color: inherit;
+}

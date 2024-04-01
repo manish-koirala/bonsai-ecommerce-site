@@ -1,0 +1,110 @@
+/* Setting some default settings for the main */
+/* Padding of top and bottom = 1px, left and right is 0px */
+main {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1px 0px;
+}
+
+/* Styling for container1 */
+#container1 {
+    color: whitesmoke;
+    background-color: rgb(88,88,88);
+    padding: 16px 150px;  
+    text-align: center;
+    height: 200px;
+    margin-bottom: -60px;
+}
+/* Heading of container1 */
+#container1 > h1 {
+    margin-bottom: 10px;
+}
+
+/* Styling for container2 */
+#container2 {
+    padding: 16px;
+    margin: 0px 64px 16px;
+    border: 2px dashed cadetblue;
+    color: rgb(88,88,88);
+    background-color: aliceblue;
+    text-align: center;
+}
+/* Heading of container2 */
+#container2 h1 {
+    margin-bottom: 32px;
+    font-size: 48px;
+}
+/* Paragraphs of container2 -> The one that contains members information like name, age ,etc. */
+#container2 p {
+    margin-top: 16px;
+    font-size: 18px;
+    margin: auto;
+    font-weight: bold;
+}
+/* The member-profiles box is a container for all the member boxes. It is a flexbox set to wrap. */
+#member-profiles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.member > img {
+    padding: 10px;
+    width: 210px;
+}
+.member {
+    border: 2px solid rgb(88,88,88);
+    width: 250px;
+    margin: 40px;
+    padding: 5px;
+}
+
+/* Styling for container3. Container 3 is a flexbox which container left and right sections.*/
+#container3 {
+    display: flex;
+    padding: 32px 0px;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: rgb(88,88,88);
+}
+/* Both left and right heading are h2 */
+#container3 h2 {
+    font-size: 32px;
+}
+/* Styling the left section */
+.left {
+    border-right :4px solid grey;
+    width: 30%;
+    margin: 50px;
+    padding: 50px;
+}
+/* Styling the right section */
+.right {
+    border: 2px solid grey;
+    width: 50%;
+    padding: 16px;
+}
+.right h2 {
+    margin-bottom: 10px;
+}
+.right p {
+    margin-top: 12px;
+}
+
+/* This style is put by : Manish Koirala.
+This is used to style the submit button */
+input[type="submit"]{
+    display: block;
+    margin-left: auto;
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+}
+input[type="submit"]:hover{
+    background-color: cadetblue;
+    color: white;
+}
+/* Increasing font size for the email input field. */
+#email {
+    font-size: 16px;
+}

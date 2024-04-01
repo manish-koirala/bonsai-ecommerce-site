@@ -1,0 +1,77 @@
+/* General settings for main */
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 16px 0px;
+    color: rgb(88, 88, 88);
+}
+
+/* Left box */
+#left-box {
+    text-align: justify;
+    padding: 30px;
+    width: 60%;
+}
+#left-box img {
+    display: block;
+}
+
+/* Right box */
+#right-box {
+    width: 35%;
+    border: 1px solid rgb(88, 88, 88);
+    padding: 20px;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+#right-box>h1 {
+    font-size: 42px;
+}
+#right-box>p {
+    font-size: 24px;
+    margin: 5px 0px;
+}
+
+/* All unordered list general settings */
+ul {
+    margin: 16px;
+}
+/* list items general settings */
+li {
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* Adjusting Heading and paragraph font sizes for left box */
+#left-box h1 {
+    font-size: 42px;
+}
+#left-box p {
+    font-size: 20px;
+}
+
+/* Social media links */
+#social {
+    display: flex;
+}
+/* Individual social media containers and images*/
+#social>div {
+    width: 50px;
+}
+#social img {
+    width: 60px;
+    height: 60px;
+    padding: 7px;
+    border-radius: 30px;
+}
+
+/* Anchor General Settings */
+a {
+    color: inherit;
+}
+a:hover {
+    color: cadetblue;
+}
+a:active {
+    color: skyblue;
+}

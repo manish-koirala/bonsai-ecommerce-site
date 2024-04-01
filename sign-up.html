@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Manish Koirala"/>
+    <meta name="description" content="Buy fresh bonsaiplants. Amazing bonsai deals for the upcoming festivals. Get your bonsai plants , delivered straight to your home now."/>
+    <meta name="keywords" content="bonsai, plants, fresh, ecommerce, buy, delivery, deals">
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <title>Register a new account | Naedoko</title>
+    <link rel="stylesheet" href="styles/sign-up.css">
+</head>
+
+<body>
+
+    <!-- Header Part -->
+    <header>
+        <!-- Logo and  image-->
+        <div id="logo">
+            <img src="images/logos/logo.png" alt="naedoko-website-logo" width="50px">
+            <h1>Naedoko </h1>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="research.html">Research</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+
+        <!-- More nav-items on the right side -->
+        <div id="r-options">
+            <a href="sign-in.html" >Login</a>
+            <a href="sign-up.html" style="background-color: cadetblue; color: white;">Get Started</a>
+        </div>
+    </header>
+
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Main register form -->
+        <form>
+            <h2>Register A New Account</h2>
+            <p>Please enter the following details:</p>
+            <label for="fname">First Name: <input name="first_name" type="text" id="fname" required></label>
+            <label for="lname">Last Name: <input name="last_name" type="text" id="lname" required></label>
+            <label for="username">Username: <input name="username" type="text" id="username" required></label>
+            <label for="email">Email: <input name="email" type="email" id="email" Placeholder="username@domain.com" required></label>
+            <label for="country">Country: <select id="country">
+                <option value="nepal" selected>Nepal</option>
+                <option value="india">India</option>
+                <option value="bangladesh">Bangladesh</option>
+            </select></label>
+                
+            <div id="gender">
+                <p>Gender: </p>
+                <label for="male"> <input name="gender" type="radio" id="male" value="male" checked> Male </label>
+                <label for="female"><input name="gender" type="radio" id="female" value="female"> Female </label>
+                <label for="others"><input name="gender" type="radio" id="others" value="others"> Others </label>
+            </div>
+            <label for="password">Password: <input type="password" name="password" id="password" placeholder="**********" required></label>
+            <label for="terms-of-service"><input type="checkbox" name="terms-of-service" id="terms-of-service" required>I have read the terms of service agreement and would like to agree.</label>
+            <input type="submit" name="Sign-Up" value="Sign-Up">
+        </form>
+    </main>
+
+</body>
+</html>

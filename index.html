@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dipendra Gautam, Manish Koirala">
+    <meta name="description" content="Buy fresh bonsaiplants. Amazing bonsai deals for the upcoming festivals. Get your bonsai plants , delivered straight to your home now."/>
+    <meta name="keywords" content="bonsai, plants, fresh, ecommerce, buy, delivery, deals">
+    <title>Home Page | Naedoko</title>
+    <!-- Styles for the header and footer -->
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <!-- Styles for the home page -->
+    <link rel="stylesheet" href="styles/index.css">
+
+    <style>/* Styles from the products page -- Added by Manish Koirala */
+        /* Cart Image Style for all over the page */
+        .cart-img > img { width: 30px; }
+        
+        /* A 'add-to-cart' container with this class has following properties */
+        .added-to-cart {font-weight: bolder; color: cadetblue;}
+        /* Cancelled Price for Products After Discount*/
+        .product-content s {color: grey;}
+        /* Product names and Product prices: */
+        .product-name {font-size: 15px; margin: 8px 0px;}
+        .product-price {font-size: 16px; color: cadetblue;}
+
+        /* Add to cart paragraph text */
+        .add-to-cart > p { margin: 5px 5px;}
+
+        .product {
+        margin: 10px;
+        border: 1px solid grey;
+        height: 320px;
+        background-color: white;
+        text-align: center;
+        }
+        /* Heading of product */
+        .products-heading {
+            padding: 10px 80px;
+            width: max-content;
+            border: 1px solid rgb(88,88,88);
+            text-align: center;
+            margin: 16px auto;
+            font-size: 24px;
+        }
+        /* Product container on hover */
+        .product:hover {
+            box-shadow: 0px 0px 5px 1px grey;
+        }
+        /* Product Name */
+        .product-name {
+            padding: 0px 5px;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+        /* Product Image */
+        .product-image {
+            width: 180px;
+            height: 160px;
+            margin: auto;
+            background-position: center;
+            background-size: 150%;
+        }
+        /* Product Content Height. i.e. Content below the image of each product.*/
+        .product-content {
+            height: 70px;
+        }
+        .buy-now {
+            color: skyblue;
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    <!-- Header Part -->
+    <header>
+        <!-- Logo -->
+        <div id="logo">
+            <img src="images/logos/logo.png" alt="naedoko-website-logo" width="50px">
+            <h1>Naedoko </h1>
+        </div>
+        <!-- Navigation bar -->
+        <nav>
+            <a href="index.html" style="background-color: cadetblue; color: white;">Home</a>
+            <a href="products.html" >Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="research.html">Research</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+        <!-- Login and Register Options -->
+        <div>
+            <a href="sign-in.html">Login</a>
+            <a href="sign-up.html" >Get Started</a>
+        </div>
+    </header>
+
+    <!-- Main Part -->
+    <main>
+
+        <!-- Banner Intro -->
+        <div id="container1">
+            <div id="intro">
+                <h1 style="font-size: 36px; margin-bottom: 20px;">Your One Place To Buy Bonzai Plants</h1>
+                <p>Get amazing deals, make your garden look livelier and awesome with fresh bonzai deliveerd to the footsteps of your house. Just give us a call, contact us via email or create an account to gain access to fresh monthly and festive deals.</p>
+            </div>
+            <button id="explore-now"><a href="products.html">Explore Now</a></button>
+        </div>
+
+        <!-- Products section -->
+        <div id="container2">
+            <h1>Our Best Products</h1>
+            <!-- Products container -->
+            <div id="products">
+                <!-- First Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/aesthetic/1.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Juniper</h5>
+                        <p class="product-price">Rs. 100</p>
+                    </div>
+                    <a class="buy-now" href="products.html">Buy now</a>
+                </div>
+                <!-- Second Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/aesthetic/4.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Japanese Flowering <br> Cherry</h5>
+                        <p class="product-price">Rs. 130</p>
+                    </div>
+                    <a class="buy-now" href="products.html">Buy now</a>
+                </div>
+                <!-- Third Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/aesthetic/7.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Weeping Fig</h5>
+                        <p class="product-price">Rs. 160</p>
+                    </div>
+                    <a class="buy-now" href="products.html">Buy now</a>
+                </div>
+                <!-- Fourth Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/aesthetic/9.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Dwarf Boxwood</h5>
+                        <p class="product-price">Rs. 90</p>
+                        <p><s>Rs. 90</s> Rs. 45</p>   
+                    </div>
+                    <a class="buy-now" href="products.html">Buy now</a>
+                </div>
+                <!-- Fifth Product -->
+                <div class="product">
+                    <div class="product-image" style="background-image: url(images/sale_products/gardening/2.jpg);"></div>
+                    <div class="product-content">
+                        <h4 class="product-name">Dwarf Jade</h5>
+                        <p class="product-price">Rs. 110</p>
+                    </div>
+                    <a class="buy-now" href="products.html">Buy now</a>
+                </div>
+            </div>
+            <button><a href="products.html">Browse more</a></button>
+        </div>
+        
+        <!-- Blog Page Section -->
+        <div id="container3">
+            <div id="c3-section">
+                <div style="text-align: center; margin-top: 48px;">
+                    <h1 style="margin-bottom: 16px;">Check Out Our Blog Page:</h1>
+                    <p>The blog is about the importance of technology in daily life. Written by a member Aayush Kayastha</p>
+                    <button><a href="blog.html">Check Out Now</a></button>
+                </div>
+            </div>
+            <div id="c3-img"><img src="images/webpage_pictures/blog.jpg " width=100% alt="blog-page-screenshot"></div>
+        </div>
+
+        <!-- Research Page Section -->
+        <div id="container4">
+            <div id="c4-img" style="overflow:auto;"><img src="images/webpage_pictures/research.jpg" width="100%" alt="research-page-screenshot"></div>
+            <div id="c4-section">
+                <h1 style="margin-bottom: 16px;">Check Out Our Research Page</h1>
+                <p>Know the ideas behind our inspiration.</p>
+                <button><a href="research.html">Check Out Now</a></button>
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+        <div id="container5">
+            <div id="c5-section">
+                <h1>ABOUT US:</h1>
+                <p>We are a team of enthusiastic members who are genuinely interested in gardening and want to provide products to the people for all their gardening needs. Currently, we are working on creating an ecommerce environment to sell Bonsai plants for those in need in Nepal.</p>
+            </div>
+            <button><a href="aboutus.html">Learn More</a></button>
+        </div>
+
+        <!-- Contact Us Section -->
+        <div id="container6">
+            <h1>CONTACT US:</h1>
+            <p>Email: buyBonzai@naedoko.com</p>
+            <p>Phone No: 010-312-123</p>
+        </div>
+
+    </main>
+
+    
+    <!-- Footer Part -->
+    <footer>
+        <!-- A flex container for four containers -->
+        <div id="footer-links">
+            <!-- First child container -->
+            <div class="footer-container">
+                <h6>About Us:</h6>
+                <a href="#">About Naedoko</a>
+                <a href="#">Careers</a>
+                <a href="#">News and Blog</a>
+                <a href="#">Suppliers</a>
+                <a href="#">Press Center</a>
+                <a href="#">Target Brands</a>
+            </div>
+            <!-- Second Child Container -->
+            <div class="footer-container">
+                <h6>Help:</h6>
+                <a href="#">Help and Support</a>
+                <a href="#">Feedback</a>
+                <a href="#">Security and Fraud</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Team Members</a>
+                <a href="#">Online Assistance</a>
+                <a href="#">Services</a>
+            </div>
+            <!-- Third Child Container -->
+            <div class="footer-container">
+                <h6>Store:</h6>
+                <a href="#">Find a store</a>
+                <a href="#">More In-Store Services</a>
+            </div>
+            <!-- Fourth Child Container -->
+            <div class="footer-container">
+                <h6>Remember To Follow Us:</h6>
+                <div id="footer-social">
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/logos/fb-logo.jpg" alt="facebook-logo"/></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="images/logos/ig-logo.jpg" alt="instagram-logo"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="images/logos/twitter-logo.jpg" alt="twitter-logo"></a>
+                    <a href="https://www.whatsapp.com" target="_blank"><img src="images/logos/whats-app.png" alt="whatsapp-logo"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright information -->
+        <p>&copy; CopyRight Naedoko 2022, ALL RIGHTS RESERVED!</p>
+    </footer>
+</body>
+</html>

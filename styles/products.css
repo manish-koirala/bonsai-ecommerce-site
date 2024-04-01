@@ -1,0 +1,383 @@
+/* This is the CSS file which contains styles specific to the products page only. */
+
+
+/* Default Settings for main */
+    main {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: rgb(240, 240, 240);
+        color: rgb(88,88,88);
+        margin: 1px 0px;
+    }
+
+/* Cart Container , Search Button and Cart Number*/
+    /* Top */
+    #top {
+        margin-bottom: -45px;
+        padding: 5px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    /* Input field of the Search-box */
+    #search-box input {
+        font-size: 14px;
+        opacity: 0.3;
+        margin-right: -35px;
+        border: none;
+        padding: 9px;
+        border-radius: 20px;
+    }
+
+    /* Search Button  */
+    #search-btn {
+        margin-right: 25px;
+        margin-top: 5px;
+    }
+
+    /* Cart Container */
+    #cart-container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+        width: max-content;
+    }
+    /* Cart Number*/
+    #cart-num {
+        width: 20px;
+        text-align: center; 
+        border-radius: 50%; 
+        background-color: cadetblue; 
+        color: white; 
+        margin-left: -12px; 
+        font-size: 14px;
+        border-radius: 40%;
+    }
+
+
+/* Container1 */
+    /* Container 1 Properties */
+    #container1 {
+        width: 100%;
+        height:100vh;
+        margin: 0px auto 10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        background-size: 100% 150%;
+        background-position: center;
+    }
+    /* Buy Now Button */
+    #buy-now-btn {
+        display: block; 
+        font-size: 26px; 
+        color:white; 
+        background-color: cadetblue; 
+        width: 200px; 
+        text-align: center;
+        border-radius: 30px; 
+        padding: 10px;
+    }
+    /* Left slider CSS Triangle */
+    .left-slider {
+        margin: 10px;
+        width: 0px;
+        height: 0px;
+        border-left: 25px solid transparent;
+        border-right: 25px solid rgba(113, 102, 102,0.5);
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+    }
+    /* Right Slider CSS Triangle */
+    .right-slider {
+        margin: 10px;
+        width: 0px;
+        height: 0px;
+        border-left: 25px solid rgba(113, 102, 102, 0.5);
+        border-right: 25px solid transparent;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+    }
+    /* Content Slides at the top mid of the page. */
+    #slides {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+    }
+    /* Circles in the image slides. */
+    .circles {
+        width: 15px; 
+        height: 15px; 
+        border-radius: 50%; 
+        background-color: rgba(202, 199, 199,0.5); 
+        margin: 0px 10px;
+    }
+
+
+/* Categories */
+    /* Categories*/
+    #categories {
+        margin-top: -14%;
+    }
+    #categories > div:hover {
+        cursor: pointer;
+    }
+    .categories-products {
+        margin: 16px 24px;
+        padding: 30px;
+        background-color: white;
+    }
+    .categories-products:hover {
+        background-color:rgba(245, 245, 245, 0.9);
+    }
+    .categories-images {
+        background-size: cover;
+        background-position: center;
+        width: 180px;
+        height: 250px;
+    }
+    .categories-headings{
+        margin: 0px 0px 20px;
+    }
+    .categories-anchors > a{
+        color: cadetblue;
+        font-size: 18px;
+    }
+    .categories-anchors > a:hover{
+        color: grey;
+        font-size: 18px;
+    }
+
+
+
+/* Container2 */
+    /* Container2 */
+    #container2 {
+        background-color: white;
+        margin: 32px;
+        padding: 25px 0px;
+        border: 1px solid rgb(88, 88, 88);
+    }
+    /* On-Sale-Now heading label */
+    #on-sale-now-label {
+        font-size: 28px;
+        width: 300px;
+        text-align: center;
+        margin: 0px auto;
+        padding: 10px;
+        color: cadetblue;
+        border: 2px solid rgb(88,88,88);
+        box-shadow: 2px 2px 8px grey;
+    }
+    /* Limited Sales Box */
+    #limited-sales {
+        text-align: center;
+    }
+    /* Direct Children of Limited Sales.i.e. The four boxes of the limited-sales section : buy1get1 , monthlydeals, festiveoffers, signininfo */
+    #limited-sales > * > * {
+        border: 2px solid cadetblue;
+        padding: 16px;
+        margin: 16px;
+    }
+    /* Heading of the above boxes */
+    #limited-sales h2 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    /* Limited Sales Row 1 */
+    #limited-sales-b1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 16px;
+        flex-wrap: wrap;
+    }
+    /* Limited Sales Row2 */
+    #limited-sales-b2 {
+        margin: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    /* Buy1-Get1-Free Box, Monthly Deals Box, Festive Offers Box*/
+    #buy1-get1-products, #monthly-deals-products, #festive-offer-products {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+    /* Products Container */
+    .products-container {
+        background-color: aliceblue;
+    }
+    /* Sign-in Info */
+    #sign-in-info {
+        width: 460px; 
+        padding: 16px;
+    } 
+
+    
+/* Container 3 */
+    /* Container 3 Left Slider and Right Slider are different from general properties. */
+    #container3 {
+        margin: 0px 24px;
+    }
+    #container3 .right-slider-container{
+        box-shadow: 0px 0px 4px 1px grey;
+    }
+    #container3 .left-slider-container{
+        box-shadow: 0px 0px 4px 1px rgb(214, 214, 214);
+    }
+    #container3 .left-slider-container , #container3 .right-slider-container {
+        display: flex;
+        align-items: center;
+    }
+    #container3-b1 > div, #container3-b2 > div, #container3-b3 > div, #container3-b4 > div {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    /* Targets 4 different categories boxes of container 3: Aesthetic, Gardening, Fruits and Favourites.*/
+    #container3 > div {
+        background-color: white;
+        margin: 20px 16px;
+        border: 1px solid rgb(88,88,88);
+        padding: 10px;
+    }
+    /* First and Second row of each category */
+    .category-row1, .category-row2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+
+
+/* Container4 : Mass Product Sales */
+    #container4 {
+        border: 1px solid rgb(88,88,88);
+        text-align: center; 
+        margin: 50px 24px 0px; 
+        background-color: white;
+    }
+    .mass-products {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+/* These containers have product images along with information about their price , 
+discounted price and add to cart button. I have set a fixed height with a solid grey border for the container */
+    /* Targets a typical product container */
+    .product {
+        margin: 10px;
+        border: 1px solid grey;
+        height: 320px;
+        background-color: white;
+    }
+    /* Heading of product */
+    .products-heading {
+        padding: 10px 80px;
+        width: max-content;
+        border: 1px solid rgb(88,88,88);
+        text-align: center;
+        margin: 16px auto;
+        font-size: 24px;
+    }
+    /* Product container on hover */
+    .product:hover {
+        box-shadow: 0px 0px 5px 1px grey;
+    }
+    /* Product Name */
+    .product-name {
+        padding: 0px 5px;
+        font-size: 15px;
+        font-weight: lighter;
+    }
+    /* Product Image */
+    .product-image {
+        width: 180px;
+        height: 160px;
+        margin: auto;
+        background-position: center;
+        background-size: 150%;
+    }
+    /* Product Content Height. i.e. Content below the image of each product.*/
+    .product-content {
+        height: 70px;
+    }
+
+/* Add to Cart Buttons */
+    .add-to-cart {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: whitesmoke;
+        width: 90%;
+        border-radius: 25px;
+        overflow: hidden;
+        margin: 15px auto;
+    }
+    .add-to-cart:hover {
+        background-color: rgb(132, 199, 202);
+        color: white;
+    }
+
+
+
+/* Load more button styling */
+    #load-more-button {
+        margin: 30px auto;
+        font-size: 18px;
+        background-color: white;
+        width: 200px;
+        padding: 8px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    #load-more-button:hover {
+        background-color: rgb(132, 199, 202);
+        color: white;
+    }
+
+
+/* These are the styling for The New Account and Back to top section.(end of the page)*/
+    #new-account, #back-to-top{
+    text-align: center;
+    }
+    /* Styling the See-personalized-recommendations section */
+    #new-account {
+        padding: 30px;
+        background-color: white;
+        border-top: 2px solid gray;
+        border-bottom: 2px solid gray;
+        margin-top: 10px;
+    }
+    #new-account > p {
+        margin: 15px;
+        font-size: 18px;
+    }
+    #new-account a {
+        color: cadetblue;
+    }
+    #new-account a:hover {
+        color: rgb(195, 195, 195);
+    }
+    /* Styling the back-to-top section */
+    #back-to-top {
+        text-align: center;
+        padding: 20px;
+        font-size: 18px;
+        background-color: rgb(93, 93, 93);
+    }
+    /* Anchor on back-to-top */
+    #back-to-top > a{
+        color: white;
+    }
+    #back-to-top > a:hover{
+        color: rgb(195, 195, 195);
+    }
